@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- App Bar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary">
+
+            <TextView
+                android:id="@+id/text_app_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Compter"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/menu_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Context -->
+        <TextView
+            android:id="@+id/text_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Compteur de médicaments"
+            android:textColor="#000000"
+            android:textSize="28sp"/>
+
+        <!-- Radio Group -->
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_paracetamol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Paracétamol" />
+
+            <RadioButton
+                android:id="@+id/radio_omeprazol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Oméprazole" />
+        </RadioGroup>
+
+        <!-- Compter Button -->
+        <Button
+            android:id="@+id/btn_compter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:text="Compter" />
+
+        <!-- Counters -->
+        <TextView
+            android:id="@+id/text_counter_paracetamol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="Paracetamol = 0"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/text_counter_omeprazol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:text="Oméprazole = 0"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

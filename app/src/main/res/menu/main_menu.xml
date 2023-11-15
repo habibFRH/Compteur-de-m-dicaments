@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_nb_paracetamol"
+        android:title="Nombre de Paracétamol"/>
+
+    <item
+        android:id="@+id/menu_nb_omeprazole"
+        android:title="Nombre d'Oméprazole"/>
+
+    <item
+        android:id="@+id/menu_quitter"
+        android:title="Quitter"/>
+
+</menu>
